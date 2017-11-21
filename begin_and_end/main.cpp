@@ -24,7 +24,7 @@ namespace project1
 
         std::vector<int> data;
     };
-
+/*
     auto begin(Vector& v) -> decltype(begin(v.data))
     {
         return begin(v.data);
@@ -34,7 +34,7 @@ namespace project1
     {
         return end(v.data);
     }
-
+*/
     Vector create_vector()
     {
         return Vector(::create_vector());
@@ -76,14 +76,8 @@ namespace project2
 
 int main()
 {
-    auto printer = [](auto&& i) { std::cout << std::forward<decltype(i)>(i) << ' '; };
+    auto printer = [](const auto& i) { std::cout << i << ' '; };
 
-/*
-    // Use std::begin and std::end instead of the corresponding member functions.
-    // If you want to have the stl-implementations as fallback uncomment the following two lines
-    using std::begin;
-    using std::end;
-*/
     //    int v[10] = { 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 };
     auto v = create_vector();
 
