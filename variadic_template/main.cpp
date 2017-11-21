@@ -49,7 +49,7 @@ void print_size()
 
 
 
-
+/*
 template<typename Function,
          typename Tuple,
          std::size_t... indices>
@@ -78,11 +78,14 @@ void print_sizes(int i, char c, double d)
     std::cout << "sizeof(c): " << sizeof(c) << std::endl;
     std::cout << "sizeof(d): " << sizeof(d) << std::endl;
 }
+*/
 
 int main()
 {
     print_size<int, char, short, long, std::string>();
 
+    /*
     auto args = std::make_tuple(1,'c',2.0);
     invoke(print_sizes, args);
+    */
 }

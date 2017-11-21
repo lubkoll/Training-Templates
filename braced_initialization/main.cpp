@@ -20,7 +20,7 @@ int main()
     // complains about narrowing of builtin types
     double x = 0, y = 1, z = 2;
 //    int a{ x + y + z };
-
+/*
     // be careful with braced initialization in conjunction with auto,
     // this behaves differently with different compilers,
     // better DON'T use it until you are allowed to use C++17
@@ -34,4 +34,5 @@ int main()
     // see
     // - Scott Meyers, Effective Modern C++, Item 7
     // - James Dennett, New Rules for auto deduction from braced-init-list, N3922
+*/
 }
